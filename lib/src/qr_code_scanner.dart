@@ -190,6 +190,7 @@ class _QrCameraSettings {
 }
 
 class QRViewController {
+  MethodChannel get currentChannel => _channel;
   QRViewController._(MethodChannel channel, GlobalKey? qrKey,
       PermissionSetCallback? onPermissionSet, CameraFacing cameraFacing)
       : _channel = channel,
